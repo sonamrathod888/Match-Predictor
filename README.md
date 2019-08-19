@@ -1,6 +1,7 @@
 # Match-Predictor
 
 #Introduction
+
 The Project is mainly about predicting the results of ipl matches, using the old ipl match histroy. Here we are analysing the old match results, based on that we are judging the outcome of randomly chosen match and varifying the accuracy of prediction with actual result. Approach: 1)Normal approach using clustering Here we are creating batsman and bowler clusters using K means algorithm. 2)Decision Tree approach Here we are Converting the data into decision tree model and using this we are predicting the result
 
 Phase 1
@@ -30,10 +31,13 @@ Here then we followed the method of using the decision trees. The outcome of the
 Using the phase 2 statistics we use the data and we perform to predict the score again ball by ball. Using the Spark MLLIB which provides functions to train and construct Decision Tree models. We trained a decision tree model, with the following parameters: Batting Average, Batting Strike Rate, Bowling Average, Bowling Economy, Bowling Strike Rate, No of balls (represented with the overs), Innings and finally the Runs. This is trained into the regression tree and thus is later used to predict the possible outcomes for the particular match. Thus we simulate the match give and predict on the basis of the trained decision tree.
 
 EXPERIMENTAL RESULTS
+
 For clustering –
+
 Accuracy : 75.21%
 Error : 24.79%
 
 For Regression decision trees –
+
 Accuracy : 82.89%
 Error : 17.11%
